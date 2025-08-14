@@ -1,0 +1,193 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        padding: 1rem;
+        height: 100vh;
+        background-image: url(qa-bg.jpg);
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        /* font-weight: <weight>; */
+        font-style: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      .main{
+        display: flex;
+        flex-direction: column;
+       /* display: none; */
+      }
+
+      .main img{
+        margin-bottom: 2.5rem;
+        height: 3rem;
+      }
+    
+.input{
+  
+  height: 3.5rem;
+  border: 2px solid #263FA9;
+  background-color: #030616;
+  display: flex;
+  padding: 0.3rem;
+  border-radius: 15px;
+  
+}
+
+
+input{
+  
+  width: 29rem;
+  border: none;
+  background-color: transparent;
+  padding-left: 1rem;
+   font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      
+  
+}
+
+input::placeholder {
+  color: #FAFAF9; 
+  opacity: 1; 
+}
+
+input:focus{
+  border: none;
+  outline: none;
+  color: white;
+}
+
+     
+button {
+    background-color: #263FA9;
+    padding: 0.5rem 1.9rem;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;     /* vertical center */
+    justify-content: center; /* horizontal center */
+    height: 100%;            /* parent ke equal height */
+    line-height: 1;          /* extra space remove */
+     white-space: nowrap;
+}
+
+
+      button:hover{
+        border: 1px solid white;
+      }
+
+
+
+      .err{
+        display: none;
+        margin: 1rem;
+        color: #FAFAF9;
+      }
+
+      
+
+      .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      .btn_download_share{
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-between
+      }
+
+      .btn{
+        padding: 1rem 2.7rem;
+        font-size: 1rem;
+      }
+
+      .btn:hover{
+        border: 2px solid white;
+      
+      }
+
+
+      .button img{
+          margin-left: 0.5rem;
+
+      }
+      
+      .circle{
+        height: 24rem;
+        width: 24rem;
+        border-radius: 50%;
+        background-color: #F8FAFC1A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .logo_img{
+        text-align: center;
+        height: 2rem;
+        margin-bottom: 7rem;
+      }
+
+      .qr{
+       
+        display: flex;
+        flex-direction: column;
+        display: none;
+        
+      }
+
+
+    
+
+
+      #qrcode{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2.4rem;
+        background-color: #F2F5F9;
+        border-radius: 35px;
+      }
+
+
+
+      @media(max-width:1024px){
+
+        .logo_img{
+          margin-bottom: 3rem;
+        }
+      }
+
+
+
+      @media(max-width :768px){
+        input{
+
+          width: 15rem;
+
+        }
+      }
+
+      @media(max-width:412px){
+
+        input{
+          width : 100% ;
+        }
+      }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <title>QR code generator | devChallenges.io</title>
+
+  </head>
+  <body>
+
+    <div class="main">
+      <img src="Logo.svg" alt="logo">
+      <div class="input"><input type="text" placeholder="Enter an url"> <button>QR code</button></div>
+      <span class="err">❌ Please Enter a Valid URL</span>
+    </div>
+
+    <div class="qr">
+
+      <img class="logo_img" src="Logo-small.svg" alt="logo">
+      <div>
+        <div class="circle">   <div id= "qrcode"> </div>   </div>
+        <div class="btn_download_share"><button class="button btn Download">Download <img src="Load_circle_duotone.svg" alt=""></button><button class="button btn Share">Share <img src="link_alt.svg" alt=""></button></div>
+      </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="app.js"></script>
+  </body>
+</html>
