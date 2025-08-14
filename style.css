@@ -10,7 +10,6 @@
         background-image: url(qa-bg.jpg);
         font-family: "Outfit", sans-serif;
         font-optical-sizing: auto;
-        /* font-weight: <weight>; */
         font-style: normal;
         display: flex;
         justify-content: center;
@@ -21,7 +20,6 @@
       .main{
         display: flex;
         flex-direction: column;
-       /* display: none; */
       }
 
       .main img{
@@ -78,10 +76,10 @@ button {
     font-size: 0.9rem;
     cursor: pointer;
     display: flex;
-    align-items: center;     /* vertical center */
-    justify-content: center; /* horizontal center */
-    height: 100%;            /* parent ke equal height */
-    line-height: 1;          /* extra space remove */
+    align-items: center;     
+    justify-content: center; 
+    height: 100%;            
+    line-height: 1;         
      white-space: nowrap;
 }
 
@@ -107,10 +105,15 @@ button {
       }
 
 
+      .Share{
+        margin-left: 1rem;
+      }
+
       .btn_download_share{
         margin-top: 4rem;
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
+       
       }
 
       .btn{
@@ -130,8 +133,8 @@ button {
       }
       
       .circle{
-        height: 24rem;
-        width: 24rem;
+        height: 17rem;
+        width: 17rem;
         border-radius: 50%;
         background-color: #F8FAFC1A;
         display: flex;
@@ -153,17 +156,19 @@ button {
         
       }
 
-
-    
-
+      .qr_div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
       #qrcode{
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2.4rem;
+        padding: 1.8rem;
         background-color: #F2F5F9;
-        border-radius: 35px;
+        border-radius: 25px;
       }
 
 
@@ -189,5 +194,16 @@ button {
 
         input{
           width : 100% ;
+        }
+      }
+
+      @media(max-width :400px){
+
+        .btn_download_share{
+          display: flex;
+          flex-direction: column;
+        }
+        .Share{
+          margin: 1rem 0;
         }
       }

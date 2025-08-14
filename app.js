@@ -19,8 +19,8 @@ button.addEventListener("click", function () {
 
     const qrCode = new QRCode(document.getElementById("qrcode"), {
         text: valueOfInput,
-        width: 230,
-        height: 230,
+        width: 150,
+        height: 150,
     });
 
     }else{
