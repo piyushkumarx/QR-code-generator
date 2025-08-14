@@ -183,6 +183,13 @@ button {
 
 
       @media(max-width :768px){
+
+        body{
+          background-image: url(qa-bg-small.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+           background-position: 70% center;
+        }
         input{
 
           width: 15rem;
@@ -191,6 +198,13 @@ button {
       }
 
       @media(max-width:412px){
+
+         body{
+          background-image: url(qa-bg-small.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 55% center;
+        }
 
         input{
           width : 100% ;
